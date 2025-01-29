@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Корзина</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js" defer></script> 
+</head> 
+ 
+<body> 
+    <div class="header"> 
+        <div class="menu-icon">☰</div> 
+        <h1 class="title">Корзина</h1> 
+ 
+    <img id="collection-image" src="https://static10.labirint.ru/books/456356/cover.jpg" alt="Сборник ЕГЭ"> 
+    <div id="collection-name">Сборник ЕГЭ</div> 
+    <div id="price">899 рублей</div> 
+    <button class="buy-button" onclick="showPaymentOptions()">Купить</button> 
+ 
+    <div class="payment-options" id="payment-options"> 
+        <div id="payment-text">Пожалуйста, выберите вид оплаты:</div> 
+        <div class="payment-option" onclick="selectPayment('finger')">Оплатить отпечатком пальца</div> 
+        <div class="payment-option" onclick="selectPayment('face')">Оплатить по скану лица</div> 
+    </div> 
+ 
+    <div class="overlay" id="overlay"> 
+        <img class="payment-image" id="image-finger" src="https://user-images.githubusercontent.com/3986894/64892403-9cfeb780-d674-11e9-997b-c230cd678fbb.png" alt="Оплата отпечатком пальца"> 
+        <img class="payment-image" id="image-face" src="https://www.kindpng.com/picc/m/381-3819158_facial-recognition-facial-image-recognition-logo-hd-png.png" alt="Оплата по скану лица"> 
+    </div> 
+ 
+    <script src="script.js"></script> 
+</body> 
+</html>

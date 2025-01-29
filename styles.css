@@ -1,0 +1,93 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#menu-icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+	width: 200px;
+}
+
+#cart-title {
+    text-align: center;
+    font-size: 60px; /* Увеличен размер шрифта */
+    margin-top: 50px;
+}
+
+#collection-image {
+    display: block;
+    margin: 20px auto;
+    width: 350px; /* Смещение влево и уменьшение размера */
+    height: auto; /* Сохранит пропорции изображения */
+    float: left; /* Сдвиг изображения влево */
+}
+
+#collection-name {
+    text-align: left;
+    font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#price {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+	padding-right;
+}
+
+.buy-button {
+	
+    display: block;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-options {
+    display: none;
+    text-align: center; /* Центрируем текст */
+    margin-top: 20px;
+}
+
+.payment-options div {
+    margin: 10px 0; /* Отступы между строками */
+}
+
+.payment-option {
+    background-color: blue; /* Цвет кнопок */
+    color: white; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Скругление углов */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-image {
+    display: none;
+    width: 300px;
+}
